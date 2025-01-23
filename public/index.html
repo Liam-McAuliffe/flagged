@@ -4,34 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flagged!</title>
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="/public/assets/flag.png" />
   </head>
   <body>
-    <p id="score">0</p>
-    <!-- Display score-->
-    <div id="progress-container">
-      <!-- Progress bar/ timer-->
-      <div id="progress-bar"></div>
+    <h1>Flagged!</h1>
+    <div class="button-container">
+      <button class="game-button" id="playButton">Play</button>
+      <button class="game-button" id="practiceButton">Practice</button>
+      <button class="game-button" id="loginButton">Login</button>
     </div>
-    <img id="flag" src="" alt="" />
-    <!-- Display a random flag-->
-    <p id="previous-flag"></p>
-    <!-- When wrong display name of previous flag-->
-    <input
-      id="guess"
-      list="countries"
-      type="text"
-      autocomplete="on"
-      autofocus
-    />
-    <div id="custom-dropdown" class="dropdown"></div>
-    <!-- Dropdown containing list of all country options-->
-    <footer>
-      <!-- Credits/ Contact-->
-      <p>By Liam McAuliffe</p>
-      <p><a id="github" href="https://github.com/Liam-McAuliffe">GitHub</a></p>
-    </footer>
 
-    <script type="module" src="../src/script.js"></script>
+    <footer>
+      <p>By Liam McAuliffe</p>
+      <p>
+        <a href="https://github.com/Liam-McAuliffe" target="_blank">GitHub</a>
+      </p>
+    </footer>
+    <script type="module" src="src/script.js"></script>
   </body>
 </html>
