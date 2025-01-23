@@ -1,3 +1,4 @@
+// List of flags with (.svg Image, Country Name)
 export const flags = [
   { image: "../assets/flags/ad.svg", country: "Andorra" },
   { image: "../assets/flags/ae.svg", country: "United Arab Emirates" },

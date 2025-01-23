@@ -8,11 +8,15 @@
   </head>
   <body>
     <p id="score">0</p>
+    <!-- Display score-->
     <div id="progress-container">
+      <!-- Progress bar/ timer-->
       <div id="progress-bar"></div>
     </div>
     <img id="flag" src="" alt="" />
+    <!-- Display a random flag-->
     <p id="previous-flag"></p>
+    <!-- When wrong display name of previous flag-->
     <input
       id="guess"
       list="countries"
@@ -21,8 +25,11 @@
       autofocus
     />
     <div id="custom-dropdown" class="dropdown"></div>
+    <!-- Dropdown containing list of all country options-->
     <footer>
+      <!-- Credits/ Contact-->
       <p>By Liam McAuliffe</p>
+      <p><a id="github" href="https://github.com/Liam-McAuliffe">GitHub</a></p>
     </footer>
 
     <script type="module" src="../src/script.js"></script>
