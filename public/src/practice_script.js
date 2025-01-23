@@ -83,6 +83,14 @@ function checkGuess() {
   console.log("remove animation");
 }
 
+function back() {
+  window.history.back();
+}
+
+document.getElementById("back").addEventListener("click", function () {
+  back();
+});
+
 // On input populate the dropdown
 document.getElementById("guess").addEventListener("input", function () {
   populateCountryList();
