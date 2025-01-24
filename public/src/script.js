@@ -6,10 +6,6 @@ function practiceMode() {
   window.location.href = "/practice";
 }
 
-function login() {
-  window.location.href = "/login";
-}
-
 document.addEventListener("DOMContentLoaded", () => {
   const playButton = document.getElementById("playButton");
   const practiceButton = document.getElementById("practiceButton");
