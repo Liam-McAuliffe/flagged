@@ -200,3 +200,8 @@ footer {
 .choice-button:active {
     background-color: #1f6db3;
 }
+
+a {
+    color: white;
+    text-decoration: none;
+}
