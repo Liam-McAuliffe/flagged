@@ -1,21 +1,21 @@
 {
-  "hosting": {
-    "site": "flagged",
-    "public": "public",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-    "rewrites": [
-      {
-        "source": "/game",
-        "destination": "/game.html"
-      },
-      {
-        "source": "/practice",
-        "destination": "/practice.html"
-      }
-    ]
-  },
-  "firestore": {
-    "rules": "firestore.rules",
-    "indexes": "firestore.indexes.json"
-  }
+    "hosting": {
+        "site": "flagged",
+        "public": "public",
+        "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+        "rewrites": [
+            {
+                "source": "/game",
+                "destination": "/game.html"
+            },
+            {
+                "source": "/practice",
+                "destination": "/practice.html"
+            }
+        ]
+    },
+    "firestore": {
+        "rules": "firestore.rules",
+        "indexes": "firestore.indexes.json"
+    }
 }

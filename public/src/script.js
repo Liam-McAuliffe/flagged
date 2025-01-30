@@ -1,19 +1,19 @@
 function startGame() {
-  window.location.href = "/game";
+    window.location.href = "/game";
 }
 
 function practiceMode() {
-  window.location.href = "/practice";
+    window.location.href = "/practice";
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const playButton = document.getElementById("playButton");
-  const practiceButton = document.getElementById("practiceButton");
-  const loginButton = document.getElementById("loginButton");
+    const playButton = document.getElementById("playButton");
+    const practiceButton = document.getElementById("practiceButton");
+    const loginButton = document.getElementById("loginButton");
 
-  playButton.addEventListener("click", startGame);
-  practiceButton.addEventListener("click", practiceMode);
-  loginButton.addEventListener("click", () => {
-    console.log("Login button clicked");
-  });
+    playButton.addEventListener("click", startGame);
+    practiceButton.addEventListener("click", practiceMode);
+    loginButton.addEventListener("click", () => {
+        console.log("Login button clicked");
+    });
 });

@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flagged!</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" href="assets/flag.png" />
-  </head>
-  <body>
-    <header>
-      <button id="back">Back</button>
-      <h1>Flagged!</h1>
-      <button onclick="window.location= 'https://github.com/Liam-McAuliffe';">
-        GitHub
-      </button>
-    </header>
-    <p id="score">0</p>
-    <!-- Display score-->
-    <img id="flag" src="" alt="" />
-    <!-- Display a random flag-->
-    <p id="previous-flag"></p>
-    <!-- When wrong display name of previous flag-->
-    <div id="choices" class="choices">
-      <!-- Multiple choice buttons will appear here -->
-    </div>
-    <footer>
-      <!-- Credits/ Contact-->
-      <p>By Liam McAuliffe</p>
-    </footer>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flagged!</title>
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="icon" href="assets/flag.png" />
+    </head>
+    <body>
+        <header>
+            <button id="back">Back</button>
+            <h1>Flagged!</h1>
+            <button
+                onclick="window.location= 'https://github.com/Liam-McAuliffe';"
+            >
+                GitHub
+            </button>
+        </header>
+        <p id="score">0</p>
+        <!-- Display score-->
+        <img id="flag" src="" alt="" />
+        <!-- Display a random flag-->
+        <p id="previous-flag"></p>
+        <!-- When wrong display name of previous flag-->
+        <div id="choices" class="choices">
+            <!-- Multiple choice buttons will appear here -->
+        </div>
+        <footer>
+            <!-- Credits/ Contact-->
+            <p>By Liam McAuliffe</p>
+        </footer>
 
-    <script type="module" src="src/practice_script.js"></script>
-  </body>
+        <script type="module" src="src/practice_script.js"></script>
+    </body>
 </html>
