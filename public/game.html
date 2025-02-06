@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Flagged!</title>
+        <title itemprop="name">Flagged!</title>
         <link rel="stylesheet" href="css/styles.css" />
         <link rel="icon" href="assets/flag.png" />
         <!-- Google tag (gtag.js) -->
@@ -25,22 +25,26 @@
     <body>
         <header>
             <button id="back">Back</button>
-            <h1>Flagged!</h1>
+            <h1 itemprop="headline">Flagged!</h1>
             <button>
-                <a href="https://github.com/Liam-McAuliffe" target="_blank"
+                <a
+                    href="https://github.com/Liam-McAuliffe"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    itemprop="sameAs"
                     >GitHub</a
                 >
             </button>
         </header>
-        <p id="score">0</p>
+        <p id="score" itemprop="gameTip">0</p>
         <!-- Display score-->
         <div id="progress-container">
             <!-- Progress bar/ timer-->
-            <div id="progress-bar"></div>
+            <div id="progress-bar" itemprop="timeRequired"></div>
         </div>
-        <img id="flag" src="" alt="" />
+        <img id="flag" src="" alt="Flag image" itemprop="image" />
         <!-- Display a random flag-->
-        <p id="previous-flag"></p>
+        <p id="previous-flag" itemprop="gameTip"></p>
         <!-- When wrong display name of previous flag-->
         <input
             id="guess"
@@ -48,12 +52,22 @@
             type="text"
             autocomplete="on"
             autofocus
+            itemprop="potentialAction"
         />
         <div id="custom-dropdown" class="dropdown"></div>
         <!-- Dropdown containing list of all country options-->
         <footer>
             <!-- Credits/ Contact-->
-            <p>By Liam McAuliffe</p>
+            <p>
+                By
+                <span
+                    itemprop="author"
+                    itemscope
+                    itemtype="https://schema.org/Person"
+                >
+                    <span itemprop="name">Liam McAuliffe</span></span
+                >
+            </p>
         </footer>
 
         <script type="module" src="src/game_script.js"></script>

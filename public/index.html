@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Flagged!</title>
+        <title itemprop="name">Flagged!</title>
         <link rel="stylesheet" href="css/styles.css" />
         <link rel="icon" href="assets/flag.png" />
         <!-- Google tag (gtag.js) -->
@@ -23,15 +23,28 @@
     </head>
 
     <body>
-        <h1>Flagged!</h1>
+        <h1 itemprop="headline">Flagged!</h1>
         <div class="button-container">
             <button class="game-button" id="playButton">Play</button>
             <button class="game-button" id="practiceButton">Practice</button>
         </div>
         <footer>
-            <p>By Liam McAuliffe</p>
             <p>
-                <a href="https://github.com/Liam-McAuliffe" target="_blank"
+                By
+                <span
+                    itemprop="author"
+                    itemscope
+                    itemtype="https://schema.org/Person"
+                >
+                    <span itemprop="name">Liam McAuliffe</span></span
+                >
+            </p>
+            <p>
+                <a
+                    href="https://github.com/Liam-McAuliffe"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    itemprop="sameAs"
                     >GitHub</a
                 >
             </p>
