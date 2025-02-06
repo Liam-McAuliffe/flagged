@@ -201,7 +201,10 @@ footer {
     background-color: #1f6db3;
 }
 
-a {
+button > a {
     color: white;
+}
+
+a {
     text-decoration: none;
 }
