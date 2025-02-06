@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /src/
+Disallow: /css/
+Disallow: /assets/
+Disallow: /game
+Disallow: /practice
+
+Sitemap: https://flagged.web.app/sitemap.xml
